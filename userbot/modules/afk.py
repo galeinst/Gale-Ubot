@@ -145,7 +145,6 @@ async def on_afk(event):
 )  # pylint:disable=E0602
 async def _(event):
         return
-    reply = await event.get_reply_message()
     global USER_AFK
     global afk_time
     global last_afk_message
