@@ -140,15 +140,8 @@ async def on_afk(event):
             pass
 
 
-
 """ Userbot module which contains afk-related commands """
 
-from datetime import datetime
-import time
-from random import choice, randint
-
-from telethon.events import StopPropagation
-from telethon.tl.functions.account import UpdateProfileRequest
 
 from userbot import (  # noqa pylint: disable=unused-import isort:skip
     AFKREASON,
@@ -163,7 +156,6 @@ from userbot import (  # noqa pylint: disable=unused-import isort:skip
     PM_AUTO_BAN,
     bot,
 )
-from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
