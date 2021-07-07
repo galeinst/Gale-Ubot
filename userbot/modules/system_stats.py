@@ -404,7 +404,7 @@ CMD_HELP.update(
         \n\n  •  **Perintah :** `.resetalive`\
         \n  •  **Function : **Untuk Mereset Pengguna Alive\
         \n\n  **Animasi Alive Lainnya :**\
-        \n `.kingalive` | `.kingon` | `.ualive` | `.uon` | `.xalive` | `.xon`\
+        \n `.kenalive`\
         \n\n  **Dingunakan Untuk Bersenang Senang Saja**\
     "
     }
