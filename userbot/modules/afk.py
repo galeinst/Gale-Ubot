@@ -140,28 +140,71 @@ async def on_afk(event):
             pass
 
 
-@register(
-    outgoing=True, pattern=r"^\.afk(?: |$)(.*)", disable_errors=True
-)  # pylint:disable=E0602
-async def _(event):
-        return
-    global USER_AFK
-    global afk_time
-    global last_afk_message
-    global last_afk_msg
+
+""" Userbot module which contains afk-related commands """
+
+from datetime import datetime
+import time
+from random import choice, randint
+
+from telethon.events import StopPropagation
+from telethon.tl.functions.account import UpdateProfileRequest
+
+from userbot import (  # noqa pylint: disable=unused-import isort:skip
+    AFKREASON,
+    BOTLOG,
+    BOTLOG_CHATID,
+    CMD_HELP,
+    ALIVE_NAME,
+    COUNT_MSG,
+    ISAFK,
+    PM_AUTO_BAN,
+    USERS,
+    PM_AUTO_BAN,
+    bot,
+)
+from userbot.events import register
+
+# ========================= CONSTANTS ============================
+AFKSTR = [
+    f"🔥𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭╼════════════╾ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n╰╼═════════╾",
+    f"🔥𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭╼════════════╾ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n╰╼═════════╾",
+    f"🔥𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭╼════════════╾ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n╰╼═════════╾",
+    f"🔥𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭╼════════════╾ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n╰╼═════════╾",
+]
+
+
+global USER_AFK  # pylint:disable=E0602
+global afk_time  # pylint:disable=E0602
+global afk_start
+global afk_end
+USER_AFK = {}
+afk_time = None
+afk_start = {}
+
+# =================================================================
+
+
+@register(outgoing=True, pattern="^.afk(?: |$)(.*)", disable_errors=True)
+async def set_afk(afk_e):
+    """ For .afk command, allows you to inform people that you are afk when they message you """
+    message = afk_e.text  # pylint:disable=E0602
+    string = afk_e.pattern_match.group(1)
+    global ISAFK
+    global AFKREASON
+    global USER_AFK  # pylint:disable=E0602
+    global afk_time  # pylint:disable=E0602
     global afk_start
     global afk_end
+    user = await bot.get_me()  # pylint:disable=E0602
     global reason
-    global pic
     USER_AFK = {}
     afk_time = None
-    last_afk_message = {}
-    last_afk_msg = {}
     afk_end = {}
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    if reply:
+    if string:
         pic = await event.client.download_media(reply)
     else:
         pic = None
