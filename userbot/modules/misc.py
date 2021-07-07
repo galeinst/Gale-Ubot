@@ -70,7 +70,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Geez-Userbot...`")
+    await event.edit("`Restarting KEN-UBOT...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ Geez-Project Repo](https://github.com/vckyou/Geez-UserBot/blob/Geez-UserBot/README.md)"
+        "\n[⭐ KEN-UBOT⭐](https://github.com/KennedyProject/KEN-UBOT/blob/KEN-UBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,13 +110,9 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "╭‒─‒──────────‒─‒╮\n"
-        "│                   ʀᴇᴘᴏ\n"
-        "│       [⚡Geez-Project⚡](https://github.com/Vckyou/Geez-UserBot)\n"
-        "├‒─‒──────────‒─‒╯\n"
-        "│🔰 **ᴏᴡɴᴇʀ :** [Geez](t.me/VckyouuBitch)\n"
-        "╰‒─‒──────────‒─‒╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/Vckyou/Geez-UserBot/blob/Geez-UserBot/LICENSE)"
+        "  **REPO :** [⭐KEN-UBOT⭐](https://github.com/KennedyProject/KEN-UBOT)\n"
+        "  **PEMILIK :** [Ken](t.me/xgothboi)\n"
+        "  **LISENSI :** [GPL-3.0 License](https://github.com/KennedyProject/KEN-UBOT/blob/KEN-UBOT/LICENSE)"
     )
 
 
