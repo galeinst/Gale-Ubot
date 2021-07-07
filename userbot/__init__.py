@@ -497,19 +497,18 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⭐KEN-UBOT⭐\ ",
+                    "Bantuan Dari ⭐KEN-UBOT⭐\\ ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⭐KEN-UBOT⭐\ ",
+                    " ⭐KEN-UBOT⭐\\ ",
                     text="""**⭐KEN-UBOT⭐\\n\n Anda Bisa Membuat KEN UBOT Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
-                            custom.Button.url(
-                                "⭐KEN-UBOT⭐\",
-                                "https://github.com/KennedyProject/KEN-UBOT"),
+                            custom.Button.url("⭐KEN - UBOT⭐\",
+                                              "https://github.com/KennedyProject/KEN-UBOT"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/Vckyouubitch")]],
