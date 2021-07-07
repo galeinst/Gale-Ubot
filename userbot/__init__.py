@@ -507,7 +507,7 @@ with bot:
                     text="""**KEN-UBOT⭐\\n\n Anda Bisa Membuat KEN UBOT Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
-                            custom.Button.url(" KEN-UBOT \",
+                            custom.Button.url(" KEN - UBOT \",
                                               "https://github.com/KennedyProject/KEN-UBOT"),
                             custom.Button.url(
                                 "OWNER",
