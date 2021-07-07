@@ -370,7 +370,7 @@ async def amireallyaliveuser(username):
         newuser = message[8:]
         global DEFAULTUSER  # global statement
         DEFAULTUSER = username
-        output = "Successfully changed user to " + newuser + "!"
+        output = "Sukses mengubah pengguna menjadi " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
@@ -378,32 +378,43 @@ async def amireallyaliveuser(username):
 async def amireallyalivereset(ureset):
     global DEFAULTUSER  # global statement
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-    await ureset.edit("`" "Successfully reset user for alive!" "`")
+    await ureset.edit("`" "Sukses Mereset Pengguna Alive!" "`")
 
 
-CMD_HELP.update({
-    "system":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
-    "\n↳ : Shows system information using neofetch."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
-    "\n↳ : Shows database related info."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spc`"
-    "\n↳ : Show system specification."
-})
-CMD_HELP.update({
-    "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.kenalive`"
-    "\n↳ : To see whether your bot is working or not."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
-    "\n↳ : Changes the 'user' in alive to the text you want."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restalive`"
-    "\n↳ : Resets the user to default."
-})
 CMD_HELP.update(
     {
-        "botversion":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
-        "\n↳ : Shows the userbot version."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
-        "\n↳ : Does a search of pip modules(s)."
-    })
+        "sistem": "**✘ Plugin :** `Sistem Userbot`\
+        \n\n  •  **Perintah :** `.sysd`\
+        \n  •  **Function : **Menampilkan informasi sis tem menggunak an neofetch\
+        \n\n  •  **Perintah :** `.pip` <plugin(s)>\
+        \n  •  **Function : **Melakukan pencarian modul pip\
+        \n\n  •  **Perintah :** `.db`\
+        \n  •  **Function : **Menampilkan info terkait database\
+        \n\n  •  **Perintah :** `.spc`\
+        \n  •  **Function : **Show system specification\
+    "
+    }
+)
+
+CMD_HELP.update(
+    {
+        "alive": "**✘ Plugin :** `Alive Userbot`\
+        \n\n  •  **Perintah :** `.alive` atau `.on`\
+        \n  •  **Function : **Ketik `.alive` untuk melihat apakah bot Anda berfungsi atau tidak\
+        \n\n  •  **Perintah :** `.resetalive`\
+        \n  •  **Function : **Untuk Mereset Pengguna Alive\
+        \n\n  **Animasi Alive Lainnya :**\
+        \n `.kingalive` | `.kingon` | `.ualive` | `.uon` | `.xalive` | `.xon`\
+        \n\n  **Dingunakan Untuk Bersenang Senang Saja**\
+    "
+    }
+)
+
+CMD_HELP.update(
+    {
+        "botver": "**✘ Plugin :** `Versi Userbot`\
+        \n\n  •  **Perintah :** `.botver`\
+        \n  •  **Function : **Menampilkan versi userbot\
+    "
+    }
+)
