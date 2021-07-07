@@ -504,14 +504,14 @@ with bot:
             else:
                 result = builder.article(
                     " ⭐KEN-UBOT⭐\\ ",
-                    text="""**⭐KEN-UBOT⭐\\n\n Anda Bisa Membuat KEN UBOT Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    text="""**KEN-UBOT⭐\\n\n Anda Bisa Membuat KEN UBOT Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
-                            custom.Button.url("⭐KEN - UBOT⭐\",
+                            custom.Button.url(" KEN-UBOT \",
                                               "https://github.com/KennedyProject/KEN-UBOT"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/Vckyouubitch")]],
+                                "t.me/xgothboi")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
