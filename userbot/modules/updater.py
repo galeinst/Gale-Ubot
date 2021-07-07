@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari ⚡Geez-Project⚡.`'
+                ' untuk dapat deploy perubahan terbaru dari ⭐KEN-UBOT⭐.`'
             )
             repo.__del__()
             return
@@ -63,7 +63,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Geez-Project dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy KEN-UBOT dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
