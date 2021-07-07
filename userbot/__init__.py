@@ -509,7 +509,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "⭐KEN-UBOT⭐"
-                                              "https://github.com/KennedyProject/KEN-UBOT"),
+                                "https://github.com/KennedyProject/KEN-UBOT"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/xgothboi")]],
