@@ -110,7 +110,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "  **REPO :** [⭐KEN-UBOT⭐](https://github.com/KennedyProject/KEN-UBOT)\n"
+        " **REPO :** [⭐KEN-UBOT⭐](https://github.com/KennedyProject/KEN-UBOT)\n"
         " **PEMILIK :** [Ken](t.me/xgothboi)\n"
         " **LISENSI :** [GPL-3.0 License](https://github.com/KennedyProject/KEN-UBOT/blob/KEN-UBOT/LICENSE)"
     )
