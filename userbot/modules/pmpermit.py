@@ -29,9 +29,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     f"╔══════ ⭐ ══════╗\n      **ROOM CHAT TUAN**     \n╚══════ ⭐ ══════╝  \n"
-    f"⎆ __{CUSTOM_TEXT}__ \n"
+    f"⎆ __Dimohon Untuk Tidak Melakukan Spam Karena Jika Anda Melakukan Spam Anda Akan Saya Blokir. Jadi Tunggu Sampai {ALIVE_NAME} Kembali Dan Membalas Pesan Anda. __ \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
-    f"⎆ **Dilarang Spam** \n"
+    f"⎆ **DILARANG SPAM** \n"
     "⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊⚊\n"
     f"◈ **TUAN** : {DEFAULTUSER}\n"
     f"◈ **SUPPORT** ⭐KEN-UBOT⭐\n")
