@@ -124,12 +124,12 @@ async def set_var(var):
 """
 
 
-@register(outgoing=True, pattern=r"^.usage(?: |$)")
+@register(outgoing=True, pattern=r"^Usage(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("😭")
+    await dyno.edit("💀")
     await asyncio.sleep(2)
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
@@ -180,17 +180,15 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "╭┈─╼━━━━━━━━━━━━━╾─┈  \n"
-                "│       ⭐ KEN-UBOT⭐  \n"
-                "├┈─╼━━━━━━━━━━━━━╾─┈  \n"
-                "│ ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ꜱᴀᴀᴛ ɪɴɪ \n"
-                f"│  ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"
-                f"│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% \n"
-                "├┈──────────────┈\n"
-                "│ ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ \n"
-                f"│  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. \n"
-                f"│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. \n"
-                "╰┈─────────────┈ \n"
+                f"╔══════════════════╗ \n"
+                f" ➠ **Penggunaan Dyno :** `{app.name}` \n"
+                f"★ **Hasil** :  `{AppHours}` **Jam** - `{AppMinutes}` **Menit**\n"
+                f"★ **Persen** : `{AppPercentage}`**%**\n"
+                f"════════════════════ \n"
+                f" ➠ **Sisa Kuota Bulan Ini :**\n"
+                f"★ **Sisa** :  `{hours}` **Jam** - `{minutes}` **Menit**\n"
+                f"★ **Persen** :  `{percentage}`**%**\n"
+                f"╚══════════════════╝ \n"
             )
             await asyncio.sleep(20)
             await event.delete()
@@ -218,7 +216,7 @@ async def _(dyno):
     return os.remove("logs.txt")
 
 
-CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage`"
+CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Usage`"
                  "\n↳ : Check Quota Dyno Heroku"
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
                  "\n↳ : Tambahkan Variabel Baru Atau Memperbarui Variabel"
