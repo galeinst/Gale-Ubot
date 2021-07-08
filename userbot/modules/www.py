@@ -43,27 +43,25 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(outgoing=True, pattern="^.sping$")
+@register(outgoing=True, pattern="^.fping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Connecting.__")
-    await pong.edit("__Connecting..__")
-    await pong.edit("__Connecting...__")
-    await pong.edit("__Connecting....__")
-    await pong.edit("__Connecting.__")
-    await pong.edit("__Connecting..__")
-    await pong.edit("__Connecting...__")
-    await pong.edit("__Connecting....__")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**╭━━━━━━━━━━━━━━━━━╮** \n"
-                    f"**          - 𝐍 𝐄 𝐓 𝐖 𝐎 𝐑 𝐊 -** \n"
-                    f"**   ▰▱▰▱▰▱▰▱▰▱▰▱** \n"
-                    f"**        • ꜱɪɢɴᴀʟ  :** `%sms` \n"
-                    f"**        • ᴏᴡɴᴇʀ   :** `{ALIVE_NAME}` \n"
-                    f"**╰━━━━━━━━━━━━━━━━━╯** \n" % (duration))
+    await pong.edit(f" ☞ `%sms` \n"
+                    f" ☞ `{ALIVE_NAME}` \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -198,7 +196,7 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.lping` | `.xping` | `.pings` | `.sping`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.lping` | `.xping` | `.pings` | `.fping`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
