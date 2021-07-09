@@ -54,12 +54,13 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "nyindir1": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tua`
-    \n↳: Coba sendiri.
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`
-    \n↳: Coba sendiri.
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gajelas`
-    \n↳: Coba sendiri.
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stress` `.l`
-    \n↳: Coba sendiri."
+    "salam":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`\
+\n↳ : Coba Aja Sendiri.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stress`\
+\n↳ : Coba Aja Sendiri.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gajelas`\
+\n↳ : Coba Aja Sendiri.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tua`\
+\n↳ : Coba Aja Sendiri."
 })
