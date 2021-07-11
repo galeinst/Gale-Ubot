@@ -54,7 +54,7 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "salam":
+    "nyindir1":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`\
 \n↳ : Coba Aja Sendiri.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stress`\
