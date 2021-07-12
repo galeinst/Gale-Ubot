@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/vckyou/Geez-UserBot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/galeinst/Gale-Ubot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Geez-Userbot....`")
+    await event.edit("`Mematikan Gale-Ubot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,7 +70,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Geez-Userbot...`")
+    await event.edit("`Restarting Gale-Ubot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ Geez-Project Repo](https://github.com/vckyou/Geez-UserBot/blob/Geez-UserBot/README.md)"
+        "\n[☠️ Gale-Project Repo](https://github.com/galeinst/Gale-Ubot/blob/Gale-Ubot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -112,11 +112,11 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭‒─‒──────────‒─‒╮\n"
         "│                   ʀᴇᴘᴏ\n"
-        "│       [⚡Geez-Project⚡](https://github.com/Vckyou/Geez-UserBot)\n"
+        "│       [☠️ Gale-Ubot ☠️](https://github.com/galeinst/Gale-Ubot)\n"
         "├‒─‒──────────‒─‒╯\n"
-        "│🔰 **ᴏᴡɴᴇʀ :** [Geez](t.me/VckyouuBitch)\n"
+        "│🔰 **ᴏᴡɴᴇʀ :** [G](t.me/gstwne)\n"
         "╰‒─‒──────────‒─‒╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/Vckyou/Geez-UserBot/blob/Geez-UserBot/LICENSE)"
+        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/galeinst/Gale-Ubot/blob/Gale-Ubot/LICENSE)"
     )
 
 
