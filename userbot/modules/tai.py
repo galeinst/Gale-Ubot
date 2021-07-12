@@ -13,7 +13,7 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "nyindir1":
+    "hmm":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yesus`\
 \n↳ : Coba Aja Sendiri."
 })
