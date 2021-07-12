@@ -169,7 +169,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .gale
-GALE_TEKS_KUSTOM = os.environ.get("GALE_TEKS_KUSTOM", None)
+GEEZ_TEKS_KUSTOM = os.environ.get("GEEZ_TEKS_KUSTOM", None)
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -447,7 +447,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        galelogo = INLINE_PIC
+        geezlogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -488,7 +488,7 @@ with bot:
                     "@Gale-Ubot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=galelogo,
+                    file=geezlogo,
                     link_preview=False,
                     text=f"☠️Gale-Ubot☠️\n\n☠️**Owner : {DEFAULTUSER}**\n\n☠️ **Bot Ver :** `5.0`\n☠️ **𝗠odules :** `{len(plugins)}`\n\n☠️ **Dev : Galeinst **".format(
                         len(dugmeler),
@@ -540,7 +540,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Gale-Project
+            if event.query.user_id == uid:  # @Gale-Ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=geezlogo,
