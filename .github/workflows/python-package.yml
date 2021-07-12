@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ Geez-UserBot ]
+    branches: [ Gale-Ubot ]
   pull_request:
-    branches: [ Geez-UserBot ]
+    branches: [ Gale-Ubot ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/vckyou/Geez-UserBot/actions/workflows/python-package.yml/badge.svg?branch=Geez-UserBot&event=workflow_dispatch)](https://github.com/vckyou/Geez-UserBot/actions/workflows/python-package.yml)
+[![Python package](https://github.com/galeinst/Gale-Ubot/actions/workflows/python-package.yml/badge.svg?branch=Gale-Ubot&event=workflow_dispatch)](https://github.com/galeinst/Gale-Ubot/actions/workflows/python-package.yml)
