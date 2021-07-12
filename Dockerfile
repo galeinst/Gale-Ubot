@@ -3,13 +3,13 @@ FROM xluxz/geezproject:buster
 # Lah U cp Atur atur
 # Geez-UserBot
 #
-RUN git clone -b Geez-UserBot https://github.com/vckyou/Geez-UserBot /root/userbot
+RUN git clone -b Gale-Ubot https://github.com/galeinst/Gale-Ubot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/vckyou/Geez-UserBot/Geez-UserBot/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/galeinst/Gale-Ubot/Gale-Ubot/requirements.txt
 
 EXPOSE 80 443
 
