@@ -53,7 +53,6 @@ async def typewriter(typew):
     await typew.edit("**YA AMPUN LU NGOMONG APA? GA NYAMBUNG KONTOL KAYA KEHIDUPAN LU MAKANYA ORG ORG KAYA LU GABAKALN MAJU HIDUPNYA APA LAGI ORG ORG BAWAHAN KAYA LU.**")
 
 
-
 @register(outgoing=True, pattern='^.Bacot(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
