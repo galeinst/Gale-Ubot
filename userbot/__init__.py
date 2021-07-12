@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/vckyou/Geez-UserBot")
+    "https://github.com/galeinst/Gale-Ubot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Geez-UserBot")
+    "UPSTREAM_REPO_BRANCH", "Gale-Ubot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -168,8 +168,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .geez
-GEEZ_TEKS_KUSTOM = os.environ.get("GEEZ_TEKS_KUSTOM", None)
+# Untuk Perintah .gale
+GALE_TEKS_KUSTOM = os.environ.get("GALE_TEKS_KUSTOM", None)
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -188,7 +188,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Geez-UserBot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Gale-Ubot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -347,7 +347,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡𝘎𝘦𝘦𝘻 𝘜𝘚𝘌𝘙𝘉𝘖𝘛⚡ Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ☠️ Gale-Ubot ☠️ Has Been Active!!```")
     return
 
 with bot:
@@ -433,7 +433,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Geez-Project")
+                    results = await event.client.inline_query(tgbotusername, "@Gale-Ubot")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -447,7 +447,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        geezlogo = INLINE_PIC
+        galelogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -485,34 +485,34 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Geez-Project"):
+                    "@Gale-Ubot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=geezlogo,
+                    file=galelogo,
                     link_preview=False,
-                    text=f"⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : VCKYOUUU **".format(
+                    text=f"☠️Gale-Ubot☠️\n\n☠️**Owner : {DEFAULTUSER}**\n\n☠️ **Bot Ver :** `5.0`\n☠️ **𝗠odules :** `{len(plugins)}`\n\n☠️ **Dev : Galeinst **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    "Bantuan Dari ☠️Gale-Ubot☠️ ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
-                    text="""**⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " ☠️Gale-Ubot☠️ ",
+                    text="""**☠️Gale-Ubot☠️\n\n Anda Bisa Membuat Gale Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
-                                "https://github.com/vckyou/Geez-Userbot"),
+                                "☠️Gale-Ubot☠️",
+                                "https://github.com/galeinst/Gale-Ubot"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/Vckyouubitch")]],
+                                "t.me/gstwne")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -540,7 +540,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Geez-Project
+            if event.query.user_id == uid:  # @Gale-Project
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=geezlogo,
