@@ -59,8 +59,19 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**BANYAK BACOT LU NGENTOT**")
 
+
+@register(outgoing=True, pattern='^.dipa(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**EH KALIAN TAU GA YANG NAMANYA DIPA**")
+    sleep(4)
+    await typew.edit("**ITU LOH YANG SUKA LIAT BKP JAM 3 PAGI**")
+    sleep(3)
+    await typew.edit("**HIHIHI**")
+
 CMD_HELP.update({
-    ".Bacot":
+    ".bacot":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`\
 \n↳ : Coba Aja Sendiri.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stress`\
@@ -69,6 +80,8 @@ CMD_HELP.update({
 \n↳ : Coba Aja Sendiri.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.babu`\
 \n↳ : Coba Aja Sendiri.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dipa`\
+\n↳ : Ngatain Yang namanya Dipa.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.Bacot`\
 \n↳ : Coba Aja Sendiri."
 })
