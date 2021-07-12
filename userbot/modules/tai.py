@@ -12,7 +12,6 @@ async def typewriter(typew):
     await typew.edit("**YESUS TERAMAT TULUS SAMPAI JADI TUKANG PIJIT PLUS PLUS YANG MELAYANI UMATNYA.**")
 
 
-
 CMD_HELP.update({
     "nyindir1":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yesus`\
