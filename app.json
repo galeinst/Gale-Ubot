@@ -1,6 +1,6 @@
 {
-  "name": "⚡𝗚𝗲𝗲𝘇 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
-  "description": "🚫Geez-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "☠️Gale-Ubot☠️",
+  "description": "☠️Gale-Ubot☠️ USERBOT YANG DIBUAT KARENA GABUT NGENTOT.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Vckyou/Geez-UserBot",
-  "telegram": "https://t.me/VckyouuBitch",
-  "success_url": "https://t.me/CariTemanRandom",
+  "repository": "https://github.com/galeinst/Gale-Ubot",
+  "telegram": "https://t.me/gstwne",
+  "success_url": "https://t.me/EFRSNE",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -171,8 +171,8 @@
       "description": "Nama untuk menunjukan pesan .alive",
       "required": false
     },
-    "GEEZ_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .geezalive (Isi Terserah)",
+    "GALE_TEKS_KUSTOM": {
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .galelive (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
