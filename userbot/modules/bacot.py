@@ -70,6 +70,17 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**HIHIHI**")
 
+@register(outgoing=True, pattern='^.adel(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**Satu titik dua koma**")
+    sleep(4)
+    await typew.edit("**Adel cantik udah ada yang punya🥰🥰🥰**")
+    sleep(3)
+    await typew.edit("**Kalo ga suka bertumbuk kita😡**")
+
+
 CMD_HELP.update({
     ".bacot":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`\
