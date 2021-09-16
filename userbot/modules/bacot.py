@@ -75,11 +75,11 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("**Satu titik dua koma**")
+    await typew.edit("**Perkenalkan saya adel**")
     sleep(4)
-    await typew.edit("**Adel cantik udah ada yang punya🥰🥰🥰**")
+    await typew.edit("**saya dari kota begal**")
     sleep(3)
-    await typew.edit("**Kalo ga suka bertumbuk kita😡**")
+    await typew.edit("**salam kenal semuanya**")
 
 
 CMD_HELP.update({
