@@ -94,6 +94,8 @@ CMD_HELP.update({
 \n↳ : Coba Aja Sendiri.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dipa`\
 \n↳ : Ngatain Yang namanya Dipa.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.adel`\
+\n↳ : Ngatain Yang namanya Dipa.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.Bacot`\
 \n↳ : Coba Aja Sendiri."
 })
