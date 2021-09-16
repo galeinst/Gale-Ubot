@@ -70,6 +70,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("**HIHIHI**")
 
+
 @register(outgoing=True, pattern='^.adel(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
